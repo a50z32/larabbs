@@ -6,7 +6,7 @@ $factory->define(App\Models\Topic::class, function (Faker $faker) {
 
     $sentence = $faker->sentence();
 
-    
+
     // 随机取一个月以内的时间
     $updated_at = $faker->dateTimeThisMonth();
 
