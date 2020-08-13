@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
         // 单独处理第一个用户的数据
         $user = User::find(1);
         $user->name = 'ooo';
-        $user->email = '286624230@qq.com.com';
+        $user->email = '286624230@qq.com';
         $user->avatar = 'https://cdn.learnku.com/uploads/images/201710/14/1/ZqM7iaP4CR.png';
         $user->save();
     }
