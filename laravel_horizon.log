@@ -5,3 +5,5 @@ Horizon started successfully.
 Horizon started successfully.
 Horizon started successfully.
 Horizon started successfully.
+[2020-08-17 15:49:14][6] Processing: App\Jobs\TranslateSlug
+[2020-08-17 15:49:21][6] Processed:  App\Jobs\TranslateSlug
