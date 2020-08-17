@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d30d23ba6f68aa934534026fe7f0659",
+    "content-hash": "73b1bc9fe89a4c2e79cd65051250cec8",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -2085,12 +2085,12 @@
             "version": "v1.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/predishq/predis.git",
+                "url": "https://github.com/predis/predis.git",
                 "reference": "82eb18c6c3860849cb6e2ff34b0c4b39d5daee46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/predishq/predis/zipball/82eb18c6c3860849cb6e2ff34b0c4b39d5daee46",
+                "url": "https://api.github.com/repos/predis/predis/zipball/82eb18c6c3860849cb6e2ff34b0c4b39d5daee46",
                 "reference": "82eb18c6c3860849cb6e2ff34b0c4b39d5daee46",
                 "shasum": "",
                 "mirrors": [
@@ -2583,6 +2583,80 @@
                 "uuid"
             ],
             "time": "2020-02-21T04:36:14+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "3.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "72f9d2dc202323f2a535ca326b817ae55534ac2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/72f9d2dc202323f2a535ca326b817ae55534ac2f",
+                "reference": "72f9d2dc202323f2a535ca326b817ae55534ac2f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/auth": "^5.8|^6.0|^7.0",
+                "illuminate/container": "^5.8|^6.0|^7.0",
+                "illuminate/contracts": "^5.8|^6.0|^7.0",
+                "illuminate/database": "^5.8|^6.0|^7.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.8|^4.0|^5.0",
+                "phpunit/phpunit": "^8.0|^9.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 5.8 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "time": "2020-08-15T20:32:30+00:00"
         },
         {
             "name": "summerblue/laravel-active",
