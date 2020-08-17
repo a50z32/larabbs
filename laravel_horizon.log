@@ -7,3 +7,11 @@ Horizon started successfully.
 Horizon started successfully.
 [2020-08-17 15:49:14][6] Processing: App\Jobs\TranslateSlug
 [2020-08-17 15:49:21][6] Processed:  App\Jobs\TranslateSlug
+[2020-08-17 17:24:39][8] Processing: App\Notifications\TopicReplied
+[2020-08-17 17:24:39][7] Processing: App\Notifications\TopicReplied
+[2020-08-17 17:24:45][7] Processed:  App\Notifications\TopicReplied
+[2020-08-17 17:24:46][8] Processed:  App\Notifications\TopicReplied
+[2020-08-17 17:31:37][10] Processing: App\Notifications\TopicReplied
+[2020-08-17 17:31:36][9] Processing: App\Notifications\TopicReplied
+[2020-08-17 17:31:44][9] Processed:  App\Notifications\TopicReplied
+[2020-08-17 17:31:45][10] Processed:  App\Notifications\TopicReplied
