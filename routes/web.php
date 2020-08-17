@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'TopicsController@root')->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 
 
 Auth::routes(['verify'=>true]);
