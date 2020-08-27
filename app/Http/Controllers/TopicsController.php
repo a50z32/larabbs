@@ -21,9 +21,12 @@ class TopicsController extends Controller
 
     public function index(Request $request, Topic $topic, User $user, Link $link)
     {
-        $topics = $topic->withOrder($request->order)
-            ->with('user', 'category')  // 预加载防止 N+1 问题
-            ->paginate(20);
+        $search_content = !empty($request->get('search_content')) ? $request->get('search_content') : '';
+        $query =  $topics = $topic->withOrder($request->order)->with('user', 'category');
+        if($search_content){
+            $query = $query->where('body','like',"%{$search_content}%");
+        }
+        $topics = $query->paginate(20);//预加载
         $active_users = $user->getActiveUsers();
         $links = $link->getAllCached();
 

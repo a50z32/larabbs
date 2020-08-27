@@ -17,7 +17,11 @@
                 <li class="nav-item {{ category_nav_active(3) }}"><a class="nav-link" href="{{ route('categories.show', 3) }}">问答</a></li>
                 <li class="nav-item {{ category_nav_active(4) }}"><a class="nav-link" href="{{ route('categories.show', 4) }}">公告</a></li>
             </ul>
-
+            <ul class="navbar-nav navbar-right">
+                <input type="hidden" value="{{ Request::url() }}" id="url">
+                <li><input type="text" id="search_content"></li>
+                <li class="nav-item"><input type="button" id="search_click" value="搜索"></li>
+            </ul>
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav navbar-right">
                 <!-- Authentication Links -->
@@ -71,3 +75,14 @@
         </div>
     </div>
 </nav>
+
+<script src="/js/jQuery-2.1.4.min.js"></script>
+
+<script type="text/javascript">
+
+$('#search_click').click(function(){
+   var url = $('#url').val() + '?search_content=' + $('#search_content').val();
+   location.href = url;
+});
+
+</script>
