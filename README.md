@@ -12,6 +12,4 @@ composer.install 加载依赖
 
 就可以使用本项目了
 
-
-
-![img.png](img.png)
+![image](https://github.com/a50z32/larabbs/blob/master/img.png)
