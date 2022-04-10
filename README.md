@@ -3,6 +3,13 @@
 模型事件监控、表单验证、消息通知、邮件通知 的一个论坛系统
 
 git clone 代码后
+
 cp .env.example .env 填上你的数据库 配置信息 
+
+数据库填充初始化 migration
+
 composer.install 加载依赖
+
 就可以使用本项目了
+
+![img.png](img.png)
